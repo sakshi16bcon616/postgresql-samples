@@ -1,0 +1,4 @@
+ALTER TABLE people 
+    ADD COLUMN plastname VARCHAR(20),
+    ADD COLUMN pcity VARCHAR(20) NOT NULL,
+    ADD COLUMN pstate VARCHAR(20) NOT NULL;
