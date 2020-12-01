@@ -1,0 +1,4 @@
+CREATE TABLE people(
+    pid SERIAL PRIMARY KEY,
+    pname VARCHAR(20) NOT NULL
+)
