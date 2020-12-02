@@ -1,0 +1,1 @@
+SELECT pfirstname || ' belongs to ' || pcity FROM people;
