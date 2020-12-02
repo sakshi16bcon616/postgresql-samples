@@ -9,3 +9,11 @@ SELECT DISTINCT pfirstname from people ORDER BY pfirstname DESC;
 --Multiple Order By
 -- In multiple, we need to specify ASC OR DESC.
 SELECT * from people ORDER BY pstate DESC, pcity ASC;
+
+
+
+
+-- Examples:-
+SELECT DISTINCT pcity FROM people ORDER BY pcity ASC;
+-- or
+SELECT DISTINCT pcity FROM people ORDER BY pcity;
