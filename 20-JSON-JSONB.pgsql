@@ -1,0 +1,2 @@
+SELECT CAST('{"name": "Bob", "favoriteFoods": ["Banana", "Candy"],"company":{"Wipro":"3.5","TCS":"3.36"}}' AS JSONB) -> 'company'->'TCS'; --JSONB type
+SELECT CAST('{"name": "Bob", "favoriteFoods": ["Banana", "Candy"],"company":{"Wipro":"3.5","TCS":"3.36"}}' AS JSONB) -> 'company'->>'TCS'; --TEXT type
