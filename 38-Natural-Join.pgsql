@@ -1,4 +1,4 @@
-SELECT customers.cname, movies.mname 
+SELECT cname, mname 
 FROM (customers NATURAL JOIN rentals) NATURAL JOIN movies;
 
 --or

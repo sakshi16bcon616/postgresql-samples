@@ -8,5 +8,10 @@ SELECT CAST('1-2 3 0:0:0' AS INTERVAL);
 SELECT CAST('P0001-2-3T0:0:0' AS INTERVAL);
 
 
+--Example: ("wishlists")
+-- SELECT pfirstname, plastname, pstate, pdob 
+-- FROM people 
+-- WHERE pdob < CAST('now' AS TIMESTAMP)-CAST('100 years' AS INTERVAL);
+
 -- Incomplete Example:-
 -- SELECT pfirstname || ' ' || plastname || ' is ' || CAST(CAST('now' AS DATE)-pdob AS TEXT) || ' years old' AS "Age" FROM people ORDER BY "Age" DESC;
