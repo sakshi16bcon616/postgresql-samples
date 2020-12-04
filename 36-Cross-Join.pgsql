@@ -1,0 +1,1 @@
+SELECT * FROM employees CROSS JOIN department;
