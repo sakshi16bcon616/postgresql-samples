@@ -12,6 +12,18 @@
 --             FROM people)+999
 --     RETURNING pid, ppoints;
 
--- 2.
+-- 2.  Incomplete
+SELECT pid,COUNT(lid)
+    FROM people
+    LEFT JOIN lists USING(pid)
+    GROUP BY pid
+    HAVING COUNT(lid) >1
+    ORDER BY count;
+
 DELETE FROM people
-    USING
+    WHERE pid IN (
+        SELECT pid WHERE (SELECT COUNT(lid) FROM people
+            LEFT JOIN lists USING(pid)
+            GROUP BY pid) > 1         
+    )
+    RETURNING *;
